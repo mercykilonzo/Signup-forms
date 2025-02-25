@@ -3,35 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            background-color: white;
+        }
+    .form{
+        box-shadow: 10px 10px 10px 10px rgb(197, 196, 196), -10px -10px 10px 10px rgb(197, 196, 196);
+        border: none;
+        width: 40%;
+        margin: 60px auto;
+        padding: 30px; 
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+     
+     #name{
+            padding: 8px 12px;
+            width: 90%;
+            margin: 5px 0;
+        }
+    #email{
+            padding: 8px 12px;
+            width: 90%;
+            margin: 5px 0;    
+
+        }
+    #password {
+        padding: 8px 12px;
+            width: 90%;
+            margin: 5px 0;  
+    }
+
+        #submit_button{
+            background: none;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 8px;
+            background-color: rgb(11, 12, 11);
+            color: white;
+            cursor: pointer;
+            margin: 10px 0;
+            width: 95%;
+
+        }
+        .hr-lines{
+  position: relative;
+  max-width: 500px;
+  margin: 70px auto;
+  text-align: center;
+}
+
+.hr-lines:before{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background: black;
+  display: block;
+  position: absolute;
+  top: 30%;
+  left: 0;
+}
+
+.hr-lines:after{
+  content:" ";
+  height: 2px;
+  width: 130px;
+  background:black;
+  display: block;
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+.icon{
+        font-size: 40px;
+        text-align: center;
+        justify-content:center;
+        display:flex; gap: 50px;
+    }
+                                         
+        
+    </style>
 </head>
 <body>
-    <form>
-        <p>already have an account, sign in</p>
-        <h1>Sign Up</h1>
-        <label for="Name">Name:</label>
-        <br>
-        <input type="text" id="name" placeholder="Enter name"/>
-        <br>
-        <label for="">Email:</label>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    </form>
+    <div class="form">
+        <form>
+            <p>Already have an account, <a href="login.html" style="color:black"><b>Sign in</b></a></p>
+            <h1>Sign Up</h1>
+            <label for="Name">Name:</label>
+            <br><br>
+            <input type="text" id="name" placeholder="Enter name"/>
+            <br><br>
+            <label for="email">Email:</label>
+            <br><br>
+            <input type="email" id="email" placeholder="Enter email address"/>
+            <br><br>
+            <label for="password">Password:</label>
+            <br><br>
+            <input type="password" id="password" placeholder="Enter password"/>
+            <br><br>
+            <input type="checkbox"id="checkbox"/><label for="Checkbox">I've Read and Agree <b>The Terms of Service </b>And Our <b>Privacy Policy</b></label>
+            <br><br>
+            <button type="submit" id="submit_button">Sign Up</button>
+            <br> <br>
+            <h2 class="hr-lines">Or Sign Up With</h2>
+            
+            <div class="icon">
+            <i class="fa-brands fa-google"></i>
+            <i class="fa-brands fa-facebook"></i>
+            </div>
+    
+    
+    
+        </form>
+    </div>
+    
    
 </body>
 </html>
